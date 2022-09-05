@@ -5,7 +5,7 @@ function generateSingleStanza(number) {
     bottleOne = "бутылок";
   } else if ((number - 1) % 10 == 1) {
     bottleOne = "бутылка";
-  } else if ((number - 1) % 10 >= 2 && (number - 1) % 10 <= 5) {
+  } else if ((number - 1) % 10 >= 2 && (number - 1) % 10 <= 4) {
     bottleOne = "бутылки";
   } else {
     bottleOne = "бутылок";
@@ -23,7 +23,7 @@ function generateSingleStanza(number) {
         number - 1
       } ${bottleOne} пива на стене!`
     );
-  } else if (number % 10 >= 2 && number % 10 <= 5) {
+  } else if (number % 10 >= 2 && number % 10 <= 4) {
     console.log(
       `${number} бутылки пива на стене, ${number} бутылки пива!\nВозьми одну, пусти по кругу, ${
         number - 1
